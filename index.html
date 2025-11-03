@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>البحث التجريبي: المساعد الذكي للتعليم الإلكتروني</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-robot"></i>
+                <span>المساعد الذكي للتعليم</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">عن البحث</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#chat" class="nav-link">المساعد الذكي</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#survey" class="nav-link">الاستبيان</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#dashboard" class="nav-link">لوحة التحكم</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- قسم الترحيب -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>بحث تجريبي: تطبيق الذكاء الاصطناعي في التعليم العالي</h1>
+            <p class="hero-subtitle">دراسة تأثير المساعدات الذكية على قبول أعضاء هيئة التدريس لأنظمة التعليم الإلكتروني</p>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <h3>أعضاء هيئة التدريس</h3>
+                    <span class="stat-number" id="faculty-count">0</span>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>محادثات</h3>
+                    <span class="stat-number" id="chats-count">0</span>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>معدل الرضا</h3>
+                    <span class="stat-number" id="satisfaction-rate">0%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم عن البحث -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>عن البحث العلمي</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>الهدف</h3>
+                    <p>دراسة تأثير دمج الذكاء الاصطناعي على قبول أنظمة التعليم الإلكتروني باستخدام نموذج TAM الموسع</p>
+                </div>
+                <div class="research-card">
+                    <i class="fas fa-hypothesis"></i>
+                    <h3>الفرضيات</h3>
+                    <p>اختبار 7 فرضيات رئيسية تربط بين الثقة في الذكاء الاصطناعي وإدراك الفائدة وسهولة الاستخدام</p>
+                </div>
+                <div class="research-card">
+                    <i class="fas fa-methodology"></i>
+                    <h3>المنهجية</h3>
+                    <p>جمع بيانات كمية (استبيانات TAM) ونوعية (تحليل محادثات) باستخدام أدوات الذكاء الاصطناعي</p>
+                </div>
+            </div>
+
+            <!-- الفرضيات البحثية -->
+            <div class="hypotheses-section">
+                <h3>الفرضيات البحثية</h3>
+                <div class="hypotheses-list">
+                    <div class="hypothesis-item">
+                        <span class="hypothesis-number">H1</span>
+                        <p>الثقة في الذكاء الاصطناعي تؤثر إيجابيًا على الموقف تجاه استخدام التعليم الإلكتروني</p>
+                    </div>
+                    <div class="hypothesis-item">
+                        <span class="hypothesis-number">H2</span>
+                        <p>الإلمام بالذكاء الاصطناعي يؤثر إيجابيًا على إدراك سهولة الاستخدام</p>
+                    </div>
+                    <div class="hypothesis-item">
+                        <span class="hypothesis-number">H3</span>
+                        <p>إدراك التخصيص يؤثر إيجابيًا على إدراك الفائدة</p>
+                    </div>
+                    <div class="hypothesis-item">
+                        <span class="hypothesis-number">H4</span>
+                        <p>إدراك الفائدة وسيط العلاقة بين إدراك التخصيص والموقف</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المساعد الذكي -->
+    <section id="chat" class="chat-section">
+        <div class="container">
+            <h2>المساعد الذكي للتعليم الإلكتروني</h2>
+            <div class="chat-container">
+                <div class="chat-header">
+                    <div class="chat-bot-info">
+                        <i class="fas fa-robot"></i>
+                        <div>
+                            <h4>المساعد الأكاديمي</h4>
+                            <span class="status">متصل</span>
+                        </div>
+                    </div>
+                    <div class="chat-actions">
+                        <button id="clear-chat" class="btn-secondary">
+                            <i class="fas fa-trash"></i> مسح المحادثة
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="chat-messages" id="chat-messages">
+                    <div class="message bot-message">
+                        <div class="message-avatar">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="message-content">
+                            <p>مرحباً! أنا المساعد الذكي للتعليم الإلكتروني. كيف يمكنني مساعدتك اليوم في مجال التعليم الأكاديمي؟</p>
+                            <span class="message-time">الآن</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="quick-questions">
+                    <h5>أسئلة سريعة:</h5>
+                    <div class="quick-buttons">
+                        <button class="quick-btn" data-question="كيف يمكنني تحسين التفاعل في المحاضرات الإلكترونية؟">
+                            تحسين التفاعل في المحاضرات
+                        </button>
+                        <button class="quick-btn" data-question="ما هي أفضل أدوات التقييم الإلكتروني؟">
+                            أدوات التقييم الإلكتروني
+                        </button>
+                        <button class="quick-btn" data-question="كيف أستخدم الذكاء الاصطناعي في تصميم المقررات؟">
+                            تصميم المقررات بالذكاء الاصطناعي
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="chat-input-container">
+                    <div class="input-group">
+                        <input type="text" id="user-input" placeholder="اكتب سؤالك هنا..." maxlength="500">
+                        <button id="send-btn" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i> إرسال
+                        </button>
+                    </div>
+                    <div class="input-footer">
+                        <span class="char-count">0/500</span>
+                        <div class="typing-indicator" id="typing-indicator" style="display: none;">
+                            <i class="fas fa-robot"></i> المساعد يكتب...
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الاستبيان -->
+    <section id="survey" class="survey-section">
+        <div class="container">
+            <h2>استبيان قبول التكنولوجيا (TAM)</h2>
+            <div class="survey-container">
+                <form id="tam-survey">
+                    <div class="user-info">
+                        <h4>المعلومات الأساسية</h4>
+                        <div class="form-group">
+                            <label for="faculty-id">رقم التعريف (اختياري):</label>
+                            <input type="text" id="faculty-id" placeholder="للتتبع الإحصائي فقط">
+                        </div>
+                        <div class="form-group">
+                            <label for="experience">سنوات الخبرة في التعليم الإلكتروني:</label>
+                            <select id="experience" required>
+                                <option value="">اختر من القائمة</option>
+                                <option value="0-2">أقل من سنتين</option>
+                                <option value="2-5">2-5 سنوات</option>
+                                <option value="5-10">5-10 سنوات</option>
+                                <option value="10+">أكثر من 10 سنوات</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- مقياس ليكرت -->
+                    <div class="likert-section">
+                        <h4>إدراك سهولة الاستخدام (PEOU)</h4>
+                        <div class="likert-item">
+                            <p>أجد أن المساعد الذكي سهل الاستخدام</p>
+                            <div class="likert-scale">
+                                <label><input type="radio" name="peou1" value="1" required> أوافق بشدة</label>
+                                <label><input type="radio" name="peou1" value="2"> أوافق</label>
+                                <label><input type="radio" name="peou1" value="3"> محايد</label>
+                                <label><input type="radio" name="peou1" value="4"> لا أوافق</label>
+                                <label><input type="radio" name="peou1" value="5"> لا أوافق بشدة</label>
+                            </div>
+                        </div>
+                        
+                        <div class="likert-item">
+                            <p>التفاعل مع المساعد الذكي لا يتطلب جهداً عقلياً كبيراً</p>
+                            <div class="likert-scale">
+                                <label><input type="radio" name="peou2" value="1" required> أوافق بشدة</label>
+                                <label><input type="radio" name="peou2" value="2"> أوافق</label>
+                                <label><input type="radio" name="peou2" value="3"> محايد</label>
+                                <label><input type="radio" name="peou2" value="4"> لا أوافق</label>
+                                <label><input type="radio" name="peou2" value="5"> لا أوافق بشدة</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="likert-section">
+                        <h4>إدراك الفائدة (PU)</h4>
+                        <div class="likert-item">
+                            <p>المساعد الذكي يحسن من أدائي في التدريس الإلكتروني</p>
+                            <div class="likert-scale">
+                                <label><input type="radio" name="pu1" value="1" required> أوافق بشدة</label>
+                                <label><input type="radio" name="pu1" value="2"> أوافق</label>
+                                <label><input type="radio" name="pu1" value="3"> محايد</label>
+                                <label><input type="radio" name="pu1" value="4"> لا أوافق</label>
+                                <label><input type="radio" name="pu1" value="5"> لا أوافق بشدة</label>
+                            </div>
+                        </div>
+                        
+                        <div class="likert-item">
+                            <p>المساعد الذكي يزيد من إنتاجيتي في العمل الأكاديمي</p>
+                            <div class="likert-scale">
+                                <label><input type="radio" name="pu2" value="1" required> أوافق بشدة</label>
+                                <label><input type="radio" name="pu2" value="2"> أوافق</label>
+                                <label><input type="radio" name="pu2" value="3"> محايد</label>
+                                <label><input type="radio" name="pu2" value="4"> لا أوافق</label>
+                                <label><input type="radio" name="pu2" value="5"> لا أوافق بشدة</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="likert-section">
+                        <h4>الثقة في الذكاء الاصطناعي</h4>
+                        <div class="likert-item">
+                            <p>أثق في قدرة المساعد الذكي على تقديم إجابات دقيقة</p>
+                            <div class="likert-scale">
+                                <label><input type="radio" name="trust1" value="1" required> أوافق بشدة</label>
+                                <label><input type="radio" name="trust1" value="2"> أوافق</label>
+                                <label><input type="radio" name="trust1" value="3"> محايد</label>
+                                <label><input type="radio" name="trust1" value="4"> لا أوافق</label>
+                                <label><input type="radio" name="trust1" value="5"> لا أوافق بشدة</label>
+                            </div>
+                        </div>
+                        
+                        <div class="likert-item">
+                            <p>أشعر بالراحة عند استخدام الذكاء الاصطناعي في عملي الأكاديمي</p>
+                            <div class="likert-scale">
+                                <label><input type="radio" name="trust2" value="1" required> أوافق بشدة</label>
+                                <label><input type="radio" name="trust2" value="2"> أوافق</label>
+                                <label><input type="radio" name="trust2" value="3"> محايد</label>
+                                <label><input type="radio" name="trust2" value="4"> لا أوافق</label>
+                                <label><input type="radio" name="trust2" value="5"> لا أوافق بشدة</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="feedback">ملاحظات إضافية (اختياري):</label>
+                        <textarea id="feedback" placeholder="شاركنا انطباعاتك الإضافية عن التجربة..." rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary btn-large">
+                        <i class="fas fa-paper-plane"></i> إرسال الاستبيان
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم لوحة التحكم -->
+    <section id="dashboard" class="dashboard-section">
+        <div class="container">
+            <h2>لوحة تحكم الباحث</h2>
+            <div class="dashboard-grid">
+                <div class="metric-card">
+                    <h4>إجمالي المشاركين</h4>
+                    <div class="metric-value" id="total-participants">0</div>
+                    <div class="metric-trend">+12% هذا الأسبوع</div>
+                </div>
+                <div class="metric-card">
+                    <h4>متوسط إدراك الفائدة</h4>
+                    <div class="metric-value" id="avg-pu">0%</div>
+                    <div class="metric-chart">
+                        <div class="chart-bar" style="width: 0%" id="pu-chart"></div>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <h4>معدل الثقة في الذكاء الاصطناعي</h4>
+                    <div class="metric-value" id="avg-trust">0%</div>
+                    <div class="metric-chart">
+                        <div class="chart-bar" style="width: 0%" id="trust-chart"></div>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <h4>إجمالي المحادثات</h4>
+                    <div class="metric-value" id="total-chats">0</div>
+                    <div class="metric-trend">+8% هذا الأسبوع</div>
+                </div>
+            </div>
+
+            <div class="data-export">
+                <h4>تصدير البيانات للبحث</h4>
+                <div class="export-buttons">
+                    <button class="btn-secondary" onclick="exportData('surveys')">
+                        <i class="fas fa-file-csv"></i> تصدير استبيانات CSV
+                    </button>
+                    <button class="btn-secondary" onclick="exportData('chats')">
+                        <i class="fas fa-comments"></i> تصدير المحادثات JSON
+                    </button>
+                    <button class="btn-secondary" onclick="generateReport()">
+                        <i class="fas fa-chart-bar"></i> تقرير إحصائي كامل
+                    </button>
+                    <button class="btn-secondary" onclick="exportAllData()">
+                        <i class="fas fa-download"></i> تصدير جميع البيانات
+                    </button>
+                </div>
+            </div>
+
+            <!-- تحليل البيانات -->
+            <div class="data-analysis">
+                <h4>تحليل أولي للبيانات</h4>
+                <div class="analysis-cards">
+                    <div class="analysis-card">
+                        <h5>توزيع الخبرة</h5>
+                        <div id="experience-chart" class="chart-container">
+                            <!-- سيتم ملؤه بالبيانات -->
+                        </div>
+                    </div>
+                    <div class="analysis-card">
+                        <h5>مقارنة المتغيرات</h5>
+                        <div id="variables-chart" class="chart-container">
+                            <!-- سيتم ملؤه بالبيانات -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer class="footer">
+        <div class="container">
+            <p>بحث أكاديمي - تطبيق الذكاء الاصطناعي في التعليم العالي - جامعة ليبيا</p>
+            <p>© 2024 جميع الحقوق محفوظة - لأغراض البحث العلمي فقط</p>
+            <div class="footer-links">
+                <a href="#privacy">سياسة الخصوصية</a>
+                <a href="#ethics">الأخلاقيات البحثية</a>
+                <a href="#contact">اتصل بالباحث</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
